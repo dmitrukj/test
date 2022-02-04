@@ -1,0 +1,121 @@
+.hero.container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+  .hero_right h1 {
+    font-size: 3rem;
+    width: 50rem;
+  }
+  ul.hero_main_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    max-width: 55rem;
+    li.one {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      p {
+        color: $c-black;
+        font-weight: bold;
+        font-size: 5rem;
+      }
+    }
+    span {
+      color: $c-black;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+}
+.hero_wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+.hero_wrapper1 {
+  margin-bottom: 2.5rem;
+  p {
+    max-width: 25rem;
+  }
+  b {
+    border: 2px solid white;
+    border-radius: 5px;
+    background: white;
+  }
+}
+.hero_wrapper2 {
+  .btn1 {
+    max-width: 30rem;
+    min-height: 8rem;
+    padding: 1.5rem;
+    background: $c-red;
+    color: $c-whait;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 10px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .btn1 .flare {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 45px;
+    transform: skewX(-45deg); // Наклон
+    animation: flareAnimation;
+    left: -150%;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.4)
+    );
+    animation: flareAnimation 3s infinite linear;
+  }
+  @keyframes flareAnimation {
+    0% {
+      left: -150%;
+    }
+    100% {
+      left: 150%;
+    }
+  }
+}
+.hero_text_slide {
+  p {
+    text-align: center;
+    color: $c-black;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+}
+.hero_img_slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  img {
+    max-width: 10vh;
+    border: 2px solid $c-gray;
+    margin-left: 1rem;
+  }
+}
+.hero_left {
+  display: flex;
+  flex-direction: row;
+}
+.hero_left_text {
+  width: 70rem;
+
+  .subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $c-gray;
+  }
+}
